@@ -1,0 +1,12 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar
+{
+background-color: transparent;
+}
+.icon-vc{
+    width: 2em;
+    height: auto;
+}

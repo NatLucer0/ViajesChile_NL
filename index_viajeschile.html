@@ -10,13 +10,13 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!--Google fonts-->
+    <!--Google fonts_Open sans-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Lobster&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--Mi estilo css-->
     <link rel="stylesheet" href="assets/css/viajeschile.css">
     <!-- JQuery-->
@@ -26,15 +26,99 @@
 </head>
 
 <body>
- <!--navbar transparente fixed-top-->
+    <!--navbar transparente fixed-top-->
+    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="row pl-4">
+                    <div class="col">
+                <img src="assets/img/viajes.svg" alt="viajeschile" class="icon-vc"></div>
+                <div class="col">
+                <p class="fs-2 ms-1 my-auto py-auto"> Viajes chile</p>
+            </div>
+            </div>
+            </a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-light" href="#">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-light" href="#">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-light" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!--Carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel-1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="carousel-2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="carousel-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-  <!--scripts jquery core 3.6.0-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!--scripts Popper-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--Quienes somos: favicon +texto -->
+    <section class="somos text-center text-white bg-dark p-5">
+        <h3 class="titulo">¿Quiénes somos?</h3>
+        <hr class="blue bg-info ">
+        <div class="row py-4">
+            <div class="col-4">
+                <div class="icono bg-info"> <i class="fas fa-plane fa-2x"></i> </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit molestie facilisis lacus faucibus, ad maecenas quisque mus magna habitant convallis nec mi vel litora, parturient felis turpis iaculis augue tellus nascetur lobortis sodales aenean. Augue varius ut porta condimentum id bibendum parturient fusce blandit cubilia ridiculus sem scelerisque torquent, ante curabitur dictum hac penatibus per faucibus purus tellus taciti lectus pretium justo. Nisi libero et felis vivamus tellus nascetur, vestibulum cursus vel erat augue id sapien, euismod quis eget venenatis aliquam.</p>
+            </div>
+            <div class="col-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit molestie facilisis lacus faucibus, ad maecenas quisque mus magna habitant convallis nec mi vel litora, parturient felis turpis iaculis augue tellus nascetur lobortis sodales aenean. Augue varius ut porta condimentum id bibendum parturient fusce blandit cubilia ridiculus sem scelerisque torquent, ante curabitur dictum hac penatibus per faucibus purus tellus taciti lectus pretium justo. Nisi libero et felis vivamus tellus nascetur, vestibulum cursus vel erat augue id sapien, euismod quis eget venenatis aliquam.</p>
+                <div class="icono bg-info"> <i class="fas fa-mountain fa-2x"></i> </div>
+            </div>
+            <div class="col-4">
+                <div class="icono bg-info"> <i class="fas fa-route fa-2x"></i></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit molestie facilisis lacus faucibus, ad maecenas quisque mus magna habitant convallis nec mi vel litora, parturient felis turpis iaculis augue tellus nascetur lobortis sodales aenean. Augue varius ut porta condimentum id bibendum parturient fusce blandit cubilia ridiculus sem scelerisque torquent, ante curabitur dictum hac penatibus per faucibus purus tellus taciti lectus pretium justo. Nisi libero et felis vivamus tellus nascetur, vestibulum cursus vel erat augue id sapien, euismod quis eget venenatis aliquam.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Destacados: 3 cards -->
+
+    <!--Contacto: formulario contacto-->
+
+    <!--Footer: iconos-->
+
+    <!--scripts jquery core 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--scripts Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
 </body>
 
