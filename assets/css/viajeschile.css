@@ -1,5 +1,6 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
 }
 
 .navbar
@@ -9,4 +10,21 @@ background-color: transparent;
 .icon-vc{
     width: 2em;
     height: auto;
+}
+.blueline{
+width: 100%;
+border-bottom-style: solid;
+border-bottom-width: 2px ;
+opacity: 100;
+color: #43a4b8;
+}
+.bg-darkcyan{
+    background-color: #43a4b8 ;
+}
+.imgcard{
+    height: 12em;
+    width: auto;
+}
+.card-body{
+    height: 20em;
 }
