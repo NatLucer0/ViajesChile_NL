@@ -4,14 +4,17 @@ $(document).ready(function(){
         scrollTop: $('section').offset().top
       }, 550);
     });
-    //Smooth scroll_ código de Kodetop
+    //TOOLTIP
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
     });
-    //Código bootstrap5 - función collpase
-    var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
-    var collapseList = collapseElementList.map(function (collapseEl) {
-    return new bootstrap.Collapse(collapseEl)
+    //PopoVer
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
     });
-    
+
+    $('#Contacto').click(function(){
+        $('.Formulariocontacto').toggle()
+    })
