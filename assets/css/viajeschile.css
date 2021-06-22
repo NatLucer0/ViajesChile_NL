@@ -18,6 +18,7 @@ border-bottom-width: 2px ;
 opacity: 100;
 color: #43a4b8;
 }
+
 .bg-darkcyan{
     background-color: #43a4b8 ;
 }
@@ -27,4 +28,7 @@ color: #43a4b8;
 }
 .card-body{
     height: 20em;
+}
+.btn-dark{
+    width:  20em;
 }
