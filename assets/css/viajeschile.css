@@ -32,3 +32,7 @@ color: #43a4b8;
 .btn-dark{
     width:  20em;
 }
+@media (min-width: 992px){
+.navbar-expand-lg, #icon123a,#icon123b,#icon123c {
+display: block !important;}
+}
