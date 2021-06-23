@@ -2,10 +2,10 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: black;
 }
-
+/* Cambié la propiedad del background de navbar de transparente a color ya que es más fácil de visualizar*/
 .navbar
 {
-background-color: transparent;
+background-color: #43a4b8;
 }
 .icon-vc{
     width: 2em;
@@ -31,4 +31,9 @@ color: #43a4b8;
 }
 .btn-dark{
     width:  20em;
+}
+/* Esta propiedad es para que los íconos se muestren en pantallas grandes y no desaparezcan. Propiedad sacada de la inspección de elementos de la web, que es lo que trae navbar por default*/
+@media (min-width: 992px){
+.navbar-expand-lg, #icon123a,#icon123b,#icon123c {
+display: block !important;}
 }
